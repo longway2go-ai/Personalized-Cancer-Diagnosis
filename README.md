@@ -54,7 +54,7 @@ Each data point is labeled with a class indicating the relevance of the mutation
 
 > ✅ **Best Performing Model:**  
 > **Stacking Classifier** with **Logistic Regression as meta-model**  
-> ⬇️ Log Loss reduced from **2.50** to **0.53**
+> ⬇️ Log Loss reduced from **2.50** to **0.40**
 
 ---
 
@@ -65,7 +65,7 @@ Each data point is labeled with a class indicating the relevance of the mutation
 | Accuracy       | ~84% (varies by class)   |
 | Precision      | High for majority classes|
 | Recall         | Balanced using ensemble models |
-| **Log Loss**   | **0.53**                 |
+| **Log Loss**   | **0.40**                 |
 
 ---
 
