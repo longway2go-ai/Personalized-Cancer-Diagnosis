@@ -4,7 +4,7 @@
 
 A cancer tumor can have thousands of genetic mutations, but not all of them contribute to tumor growth. Distinguishing **driver mutations** (those that promote cancer) from **passenger mutations** (those that do not) is essential for personalized treatment. Traditionally, this task is performed manually by clinical pathologists who interpret each mutation by analyzing clinical literature—an extremely time-consuming and expertise-intensive process.
 
-This project leverages **Natural Language Processing (NLP)** and **Machine Learning (ML)** techniques to automatically classify genetic mutations based on textual evidence from clinical literature.
+This project leverages **Natural Language Processing (NLP)** , **Machine Learning (ML)** and **Neural Networks** techniques to automatically classify genetic mutations based on textual evidence from clinical literature.
 
 ---
 
@@ -43,18 +43,19 @@ Each data point is labeled with a class indicating the relevance of the mutation
 
 ## 🧠 Models Implemented
 
-| Model                   | Notes                                                  |
+| Model                   | Notes                                                 |
 |------------------------|--------------------------------------------------------|
 | Naive Bayes            | Good baseline for text classification                  |
 | Logistic Regression    | Interpretable and effective on linear data             |
 | K-Nearest Neighbors    | Non-parametric, used for experimentation               |
 | Linear SVM             | Effective for high-dimensional space                   |
 | Random Forest (Bagging)| Handles non-linearities and reduces overfitting        |
-| Stacking Classifier    | **Best performer** – Reduced log loss to **0.53**      |
+| Stacking Classifier    | Reduced log loss to **0.43**                           |
+| Dense Neural Network   | **Best Performer** Reduced log loss to **0.20**        |
 
 > ✅ **Best Performing Model:**  
-> **Stacking Classifier** with **Logistic Regression as meta-model**  
-> ⬇️ Log Loss reduced from **2.50** to **0.40**
+> **Feed Forward Neural Network** outperforms the best traditional Ensemble learning **Stacking Classifier** with **Logistic Regression as meta-model**  
+> ⬇️ Log Loss reduced from **2.50** to **0.20**
 
 ---
 
@@ -65,7 +66,7 @@ Each data point is labeled with a class indicating the relevance of the mutation
 | Accuracy       | ~84% (varies by class)   |
 | Precision      | High for majority classes|
 | Recall         | Balanced using ensemble models |
-| **Log Loss**   | **0.40**                 |
+| **Log Loss**   | **0.20**                 |
 
 ---
 
@@ -74,7 +75,7 @@ Each data point is labeled with a class indicating the relevance of the mutation
 ### Prerequisites
 
 - Python 3.8+
-- Libraries: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `nltk`, `xgboost`, etc.
+- Libraries: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `nltk`, `xgboost`, `tensorflow`.
 
 ### Installation
 
