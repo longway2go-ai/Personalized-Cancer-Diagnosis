@@ -1,4 +1,4 @@
-# 🔬 Personalized Cancer Diagnosis Using NLP and ML
+# 🔬 Cancer Diagnosis using Medical Literature
 
 ## 📌 Project Overview
 
